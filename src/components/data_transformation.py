@@ -58,10 +58,7 @@ class DataTransformation:
             logging.info("Original Train DataFrame columns: %s", train_df.columns.tolist())
             logging.info("Original Test DataFrame columns: %s", test_df.columns.tolist())
 
-            # Clean column names
-            train_df = self.clean_column_names(train_df)
-            test_df = self.clean_column_names(test_df)
-            print(test_df)
+
 
             logging.info("Cleaned Train DataFrame columns: %s", train_df.columns.tolist())
             logging.info("Cleaned Test DataFrame columns: %s", test_df.columns.tolist())
@@ -78,7 +75,7 @@ class DataTransformation:
             if target_column_name not in train_df.columns:
                 logging.error(f"Column '{target_column_name}' not found in train_df. Available columns are: {train_df.columns.tolist()}")
                 raise KeyError(f"Column '{target_column_name}' not found in train_df.")
-     
+            
             # Check for the target column in test_df
             if target_column_name not in test_df.columns:
                 logging.error(f"Column '{target_column_name}' not found in test_df. Available columns are: {test_df.columns.tolist()}")
