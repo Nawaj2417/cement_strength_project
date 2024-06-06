@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Strength Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Predict Concrete Compressive Strength</h2>
+        <form method="POST" action="/predict">
+            <div class="form-group">
+                <label for="Cement">Cement</label>
+                <input type="number" step="0.01" class="form-control" id="Cement" name="Cement" required>
+            </div>
+            <div class="form-group">
+                <label for="Blast_Furnace_Slag">Blast Furnace Slag</label>
+                <input type="number" step="0.01" class="form-control" id="Blast_Furnace_Slag" name="Blast Furnace Slag" required>
+            </div>
+            <div class="form-group">
+                <label for="Fly_Ash">Fly Ash</label>
+                <input type="number" step="0.01" class="form-control" id="Fly_Ash" name="Fly Ash" required>
+            </div>
+            <div class="form-group">
+                <label for="Water">Water</label>
+                <input type="number" step="0.01" class="form-control" id="Water" name="Water" required>
+            </div>
+            <div class="form-group">
+                <label for="Superplasticizer">Superplasticizer</label>
+                <input type="number" step="0.01" class="form-control" id="Superplasticizer" name="Superplasticizer" required>
+            </div>
+            <div class="form-group">
+                <label for="Coarse_Aggregate">Coarse Aggregate</label>
+                <input type="number" step="0.01" class="form-control" id="Coarse_Aggregate" name="Coarse Aggregate" required>
+            </div>
+            <div class="form-group">
+                <label for="Fine_Aggregate">Fine Aggregate</label>
+                <input type="number" step="0.01" class="form-control" id="Fine_Aggregate" name="Fine Aggregate" required>
+            </div>
+            <div class="form-group">
+                <label for="Age_day">Age (day)</label>
+                <input type="number" step="0.01" class="form-control" id="Age_day" name="Age (day)" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+        {% if final_result %}
+        <div class="mt-4">
+            <h4>Predicted Concrete Compressive Strength: {{ final_result }}</h4>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

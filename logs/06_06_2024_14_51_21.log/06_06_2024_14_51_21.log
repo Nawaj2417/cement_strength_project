@@ -1,0 +1,23 @@
+[ 2024-06-06 14:51:22,234 ] 26 root - INFO - Entered the data ingestion method or component
+[ 2024-06-06 14:51:22,238 ] 29 root - INFO - Read the dataset as dataframe
+[ 2024-06-06 14:51:22,247 ] 35 root - INFO - Train test split initiated
+[ 2024-06-06 14:51:22,256 ] 42 root - INFO - Inmgestion of the data iss completed
+[ 2024-06-06 14:51:22,282 ] 59 root - INFO - Read the train and test data completed
+[ 2024-06-06 14:51:22,288 ] 60 root - INFO - Train DataFrame Head: 
+   Cement  Blast Furnace Slag  Fly Ash   Water  Superplasticizer  Coarse Aggregate  Fine Aggregate  Age (day)  Concrete compressive strength 
+0  158.60              148.90   116.00  175.10             15.00             953.3          719.70         28                       27.681082
+1  424.00               22.00   132.00  178.00              8.48             822.0          750.00         28                       62.052840
+2  275.07                0.00   121.35  159.48              9.90            1053.6          777.50          3                       23.800712
+3  252.00               97.00    76.00  194.00              8.00             835.0          821.00         28                       33.398217
+4  168.88               42.22   124.25  158.33             10.83            1080.8          796.15          3                        7.398077
+[ 2024-06-06 14:51:22,290 ] 61 root - INFO - Test DataFrame Head: 
+   Cement  Blast Furnace Slag  Fly Ash  Water  Superplasticizer  Coarse Aggregate  Fine Aggregate  Age (day)  Concrete compressive strength 
+0   266.0               114.0      0.0  228.0               0.0             932.0           670.0        365                       52.908320
+1   362.6               189.0      0.0  164.9              11.6             944.7           755.8          7                       55.895819
+2   389.9               189.0      0.0  145.9              22.0             944.7           755.8         28                       74.497882
+3   362.6               189.0      0.0  164.9              11.6             944.7           755.8          3                       35.301171
+4   145.0                 0.0    179.0  202.0               8.0             824.0           869.0         28                       10.535193
+[ 2024-06-06 14:51:22,291 ] 26 root - INFO - Data Transformation initiated
+[ 2024-06-06 14:51:22,291 ] 31 root - INFO - Pipeline Initiated
+[ 2024-06-06 14:51:22,291 ] 46 root - INFO - Pipeline completed
+[ 2024-06-06 14:51:22,291 ] 109 root - INFO - Exception occurred in initiate_data_transformation
