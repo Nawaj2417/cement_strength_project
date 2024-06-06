@@ -68,7 +68,7 @@ class DataTransformation:
             logging.info("Obtaining preprocessing object")
             preprocessing_obj = self.get_data_transformation_object()
 
-            target_column_name = "Concrete compressive strength"
+            target_column_name = "Concrete compressive strength "
             print(test_df.columns)
 
             # Check for the target column in train_df
